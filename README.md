@@ -2,7 +2,6 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Sun Apr 09 2023 13:59:53 GMT+0300 (GMT+03:00)|
 |**App Generator**<br>@sap/generator-fiori-freestyle|
 |**App Generator Version**<br>1.9.3|
 |**Generation Platform**<br>Visual Studio Code|
