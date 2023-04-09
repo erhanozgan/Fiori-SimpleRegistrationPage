@@ -1,3 +1,4 @@
+![registrationPage-fiori](https://user-images.githubusercontent.com/29740611/230770921-7bfb80f4-3582-4734-b955-e0c923e784e4.png)
 ## Application Details
 |               |
 | ------------- |
