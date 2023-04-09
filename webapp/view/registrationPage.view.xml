@@ -1,0 +1,111 @@
+<mvc:View 
+    controllerName="RegistrationForm.registrationpage.controller.registrationPage"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    >
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <HBox id="_IDGenHbox1" width="100%">
+            <VBox id="_IDGenVBox1" width="100%">
+                <f:SimpleForm
+                id="myForm"
+                layout="ResponsiveGridLayout"
+                title="Registration"
+                labelSpanM="3">
+                    <f:content>
+                        <core:Title id="_IDGenTitle1" text="Personel Info"/>
+                        <Label id="_IDGenLabel1" text="Name"/>
+                        <Input id="_IDGenInput1" value="{/fName}" placeholder="First Name"/>
+                        <Input id="_IDGenInput2" value="{/lName}" placeholder="Last Name">
+                            <layoutData>
+                                <l:GridData id="_IDGenGridData1" span="L3 M3 S4"></l:GridData>
+                            </layoutData>
+                        </Input>
+                        <core:Icon src="sap-icon://person-placeholder" size="50em"></core:Icon>
+                        <Label id="_IDGenLabel2" text="Father Name"/>
+                        <Input id="_IDGenInput3" value="{/fatherName}" placeholder="Father Name">
+                            <layoutData>
+                                <l:GridData id="_IDGenGridData2" span="L3 M3 S4"></l:GridData>
+                            </layoutData>
+                        </Input>
+
+                        <Label text="Phone Number"/>
+                        <Input value="{/pNumber}" placeholder="Phone Number">
+                            <layoutData>
+                                <l:GridData span="L3 M3 S4"></l:GridData>
+                            </layoutData>
+                        </Input>
+
+                        <Label text="Date Of Birth"></Label>
+                        <DatePicker id="dateEdit" value="{/dateOfBirth}">
+                            <layoutData>
+                                <l:GridData span="L3 M3 S4"></l:GridData>
+                            </layoutData>
+                        </DatePicker>
+
+                        <Label text=""></Label>
+                        <Button text="Save" type="Accept" press="saveButtonPress"></Button>
+                        <Button text="Cancel" type="Reject" press="cancelButtonPress"></Button>
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+
+            <VBox width="50%" id="idStudentData" visible="false">
+            <HBox width="100%" justifyContent="Center" class="sapUitinyMargin">
+            
+                <HBox width="50%" justifyContent="End">
+                    <Label text="FirstName :"></Label>
+                </HBox>
+                <HBox width="50%" justifyContent="Start">
+                    <Text text="{/fName}"></Text>
+                </HBox>
+            </HBox>
+
+            <HBox width="100%" justifyContent="Center" class="sapUitinyMargin">
+            
+                <HBox width="50%" justifyContent="End">
+                    <Label text="LastName :"></Label>
+                </HBox>
+                <HBox width="50%" justifyContent="Start">
+                    <Text text="{/lName}"></Text>
+                </HBox>
+            </HBox>
+
+            <HBox width="100%" justifyContent="Center" class="sapUitinyMargin">
+            
+                <HBox width="50%" justifyContent="End">
+                    <Label text="FatherName :"></Label>
+                </HBox>
+                <HBox width="50%" justifyContent="Start">
+                    <Text text="{/fatherName}"></Text>
+                </HBox>
+            </HBox>         
+
+            <HBox width="100%" justifyContent="Center" class="sapUitinyMargin">
+            
+                <HBox width="50%" justifyContent="End">
+                    <Label text="Phone :"></Label>
+                </HBox>
+                <HBox width="50%" justifyContent="Start">
+                    <Text text="{/pNumber}"></Text>
+                </HBox>
+            </HBox>    
+
+            <HBox width="100%" justifyContent="Center" class="sapUitinyMargin">
+            
+                <HBox width="50%" justifyContent="End">
+                    <Label text="Date :"></Label>
+                </HBox>
+                <HBox width="50%" justifyContent="Start">
+                    <Text text="{/dateOfBirth}"></Text>
+                </HBox>
+            </HBox>        
+            </VBox>
+            </HBox>
+        </content>
+    </Page>
+</mvc:View>
